@@ -1,0 +1,31 @@
+{
+  "name": "sam_services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Shreyas Bande",
+  "license": "© shreyas",
+  "eslintConfig": "a.eslintrc",
+  "scripts": {
+    "start": "node app.js",
+    "test": "./node_modules/.bin/jasmine-node spec --verbose",
+    "staticAnalysis": "node platoConfig.js",
+    "coverage": "istanbul cover ./node_modules/jasmine/bin/jasmine.js spec/*.spec.js --dir './../../Reports/Service/CoverageReport"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "pg": "^6.1.0",
+    "pg-transaction": "^1.0.4",
+    "plato": "^1.7.0",
+    "restify": "^4.1.1",
+    "restify-router": "^0.2.1",
+    "sinon": "^1.17.6",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.2",
+    "jasmine-node": "^1.14.5",
+    "jasmine-promises": "^0.4.1"
+  }
+}
